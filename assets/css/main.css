@@ -220,6 +220,23 @@ nav.navbar-solid {
   color: var(--secondary);
 }
 
+@media screen and (max-width: 768px) {
+  .btn {
+    padding: 0;
+  }
+  .btn:before,
+  .btn:hover:before {
+    display: none;
+  }
+
+  .btn:hover .btn-text,
+  .btn:hover .btn-icon,
+  .btn:focus .btn-text,
+  .btn:focus .btn-icon {
+    color: var(--secondary);
+  }
+}
+
 @media screen and (max-width: 640px) {
   .instagramPosts > a {
     display: none;
