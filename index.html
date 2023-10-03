@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINKHADIM</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" href="assets/css/drawer.css" /> -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body class="homepageWrapper">
+    <header>
+      <nav class="w-full fixed py-2 z-50 navbar-bg border-b" id="navbar">
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <a href="./" class="block">
+              <img
+                src="assets/images/logo.png"
+                class="logo h-16 md:h-auto"
+                alt="BINKHADIM Logo"
+              />
+            </a>
+
+            <ul class="flex-1 flex items-center justify-end space-x-4">
+              <li>
+                <a href="#" class="hover:text-secondary"
+                  ><span class="icon-search text-xl"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary"
+                  ><span class="icon-user text-xl"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-secondary"
+                  ><span class="icon-shopping-bag text-xl"></span
+                ></a>
+              </li>
+
+              <li>
+                <a href="#" class="hover:text-secondary"
+                  ><span class="icon-menu text-xl"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="slickSliderWrapper relative">
+        <div class="slick-slider sliderDesktop hidden md:block">
+          <div class="slide-item cursor-pointer">
+            <div class="relative">
+              <img
+                src="assets/images/slider1.jpg"
+                alt="Slider1"
+                class="h-auto"
+              />
+            </div>
+          </div>
+
+          <div class="slide-item">
+            <div class="relative">
+              <img
+                src="assets/images/slider1.jpg"
+                alt="Slider1"
+                class="h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="slick-slider sliderMobile block md:hidden">
+          <div class="slide-item cursor-pointer">
+            <div class="relative">
+              <img
+                src="assets/images/slider-mob.jpg"
+                alt="Slider1"
+                class="h-auto"
+              />
+            </div>
+          </div>
+
+          <div class="slide-item">
+            <div class="relative">
+              <img
+                src="assets/images/slider-mob.jpg"
+                alt="Slider1"
+                class="h-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden md:block SliderArrow absolute w-full top-1/2 -translate-y-1/2"
+        >
+          <div class="container flex justify-between">
+            <a
+              href=""
+              class="h-20 flex items-center prev-arrow transition-all ease-in-out duration-300"
+            >
+              <span class="text-primary icon-chevron-left text-4xl"></span>
+              <span
+                class="block uppercase -rotate-90 tracking-wider text-xs text-black"
+                >Previous</span
+              ></a
+            >
+            <a
+              href=""
+              class="h-20 flex items-center next-arrow transition-all ease-in-out duration-300"
+            >
+              <span
+                class="block uppercase rotate-90 tracking-wider text-xs text-black"
+                >Next</span
+              >
+              <span class="text-primary icon-chevron-right text-4xl"></span>
+            </a>
+          </div>
+        </div>
+        <div class="w-full SocialSiteWrapper absolute right-0 bottom-7">
+          <div class="container">
+            <div class="flex justify-end">
+              <ul class="flex items-center">
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-facebook hover:opacity-100"
+                    ><span
+                      class="icon-social-facebook text-lg text-white"
+                    ></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-instagram hover:opacity-100"
+                    ><span class="icon-instagram text-sm text-white"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-black hover:opacity-100"
+                    ><span class="icon-tiktok text-sm text-white"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full hover:bg-twitter hover:opacity-100"
+                    ><span class="icon-x1 text-sm text-white"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="py-8 md:py-12 lg:py-24">
+      <div class="container">
+        <div class="flex justify-center items-center">
+          <img
+            data-aos="fade-right"
+            src="assets/images/ghalya-transparent.png"
+            alt="Ghalya Product"
+            class="h-64 xs:h-80 md:w-auto md:h-auto"
+          />
+          <div
+            class="flex flex-col p-4 xs:p-12 md:p-24 text-center"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <h1 class="uppercase text-4xl lg:text-5xl avenirnextcyr_medium">
+              Ghalya
+            </h1>
+            <div class="w-full flex justify-center">
+              <p class="mt-2 w-32 text-sm avenirnextcyr_medium">
+                Enchant with a subtle scent that leaves a lasting impression
+              </p>
+            </div>
+            <button class="mt-8 flex items-center justify-center btn">
+              <span
+                class="uppercase text-sm avenirnextcyr_medium whitespace-nowrap btn-text"
+                >Order Now</span
+              ><span class="px-1 icon-arrow-right btn-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ghalyaperfumeWrapper bg-bg_gray pb-24">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div>
+            <img
+              data-aos="fade-right"
+              src="assets/images/perfume-transparent.png"
+              alt="Product Ghalya"
+            />
+          </div>
+          <div class="lg:pt-44">
+            <div
+              class="perfumeTitle"
+              data-aos="fade-down"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <p class="avenirnextcyr_light text-2xl">
+                Your Signature Scent to
+              </p>
+              <h1 class="avenirnextcyr_bold text-3xl uppercase borderLine">
+                The Classical Beauty
+              </h1>
+            </div>
+            <div class="ghalyaCategory mt-16">
+              <div
+                data-aos="fade-down"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
+                <h2 class="adobeArabicRegular text-3xl uppercase">Top</h2>
+                <p class="avenirnextcyr_medium text-sm opacity-80">
+                  Neroli, Bergamot, Mandarin, Cardamom, Orange Blossom.
+                </p>
+              </div>
+
+              <div
+                class="mt-10"
+                data-aos="fade-down"
+                data-aos-delay="110"
+                data-aos-duration="1200"
+              >
+                <h2 class="adobeArabicRegular text-3xl uppercase">Heart</h2>
+                <p class="avenirnextcyr_medium text-sm opacity-80">
+                  Bulgarian Rose, Marshmallow, Ylang-ylang, Heliotrope, Jasmine.
+                </p>
+              </div>
+
+              <div
+                class="mt-10"
+                data-aos="fade-down"
+                data-aos-delay="120"
+                data-aos-duration="1400"
+              >
+                <h2 class="adobeArabicRegular text-3xl uppercase">Base</h2>
+                <p class="avenirnextcyr_medium text-sm opacity-80">
+                  Oud Oil, Ambergris, Frankincense, Orris Root, Musk.
+                </p>
+              </div>
+
+              <button
+                class="inline-flex items-center mt-8 btn btn-primary"
+                data-aos="fade-left"
+                data-aos-delay="120"
+                data-aos-duration="1400"
+              >
+                <span
+                  class="avenirnextcyr_medium text-sm uppercase whitespace-nowrap btn-text"
+                  >Order Now</span
+                >
+                <span class="icon-arrow-right px-1 btn-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 lg:py-52">
+      <div class="container">
+        <div class="flex justify-center text-center">
+          <div class="max-w-[600px]">
+            <h1
+              class="adobeArabicRegular text-4xl lg:text-5xl"
+              data-aos="fade-down"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              THE HOUSE
+            </h1>
+            <span
+              class="block avenirnextcyr_light text-base mb-8"
+              data-aos="fade-down"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              >Crafted For Luxury</span
+            >
+            <p
+              class="avenirnextcyr_medium text-sm"
+              data-aos="fade-down"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              Established in 2023, BINKHADIM is the creation of three brothers,
+              united by their shared passion and heritage in the heart of
+              Sharjah, in the Middle East. Inspired by their childhood and the
+              rich sensory tapestry of their homeland, they embarked on a
+              journey to create fragrances that would bridge tradition with
+              modernity.
+            </p>
+            <button
+              class="inline-flex items-center mt-8 btn btn-primary"
+              data-aos="fade-down"
+              data-aos-delay="110"
+              data-aos-duration="1400"
+            >
+              <span
+                class="avenirnextcyr_medium text-sm uppercase whitespace-nowrap btn-text"
+                >Explore More</span
+              >
+              <span class="icon-arrow-right px-1 btn-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div>
+          <div class="flex justify-center text-center">
+            <div
+              data-aos="fade-down"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <img
+                src="assets/images/logo_mark.png"
+                alt="Logo Mark"
+                class="h-16 inline-block mb-6"
+              />
+              <h1 class="adobeArabicRegular text-4xl lg:text-5xl">
+                FOLLOW US ON INSTAGRAM
+              </h1>
+              <span class="block avenirnextcyr_light text-xl lg:text-2xl mb-12"
+                >@binkhadimofficial</span
+              >
+            </div>
+          </div>
+          <div
+            class="instagramPosts grid grid-cols-2 sm:grid-cols-4 gap-0 lg:gap-4"
+          >
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+              ><img
+                src="assets/images/instagram/instapost-1.jpg"
+                class="w-full h-80 object-cover"
+                alt="Instagram Post"
+            /></a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+              ><img
+                src="assets/images/instagram/instapost-2.jpg"
+                class="w-full h-80 object-cover"
+                alt="Instagram Post"
+            /></a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+              ><img
+                src="assets/images/instagram/instapost-3.jpg"
+                class="w-full h-80 object-cover"
+                alt="Instagram Post"
+            /></a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+              ><img
+                src="assets/images/instagram/instapost-4.jpg"
+                class="w-full h-80 object-cover"
+                alt="Instagram Post"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Footer Section Start -->
+    <footer>
+      <div class="container">
+        <div class="py-8 lg:pt-12 lg:pb-20">
+          <div
+            class="footerWrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 lg:gap-16"
+          >
+            <div>
+              <img
+                src="assets/images/logo-footer.png"
+                alt="Logo Footer"
+                class="h-36"
+              />
+            </div>
+            <div>
+              <h3 class="avenirnextcyr_light text-xl mt-9 mb-3 uppercase">
+                Quick links
+              </h3>
+              <ul class="">
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base">About us</a>
+                </li>
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base"
+                    >Brand Story</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base">Perfumes</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="avenirnextcyr_light text-xl mt-9 mb-3 uppercase">
+                Legals
+              </h3>
+              <ul class="">
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base"
+                    >Return/Refund Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="avenirnextcyr_light text-xl mt-9 mb-3 uppercase">
+                Support
+              </h3>
+              <ul class="">
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base"
+                    >800 khadim</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base">Email Us</a>
+                </li>
+                <li>
+                  <a href="" class="avenirnextcyr_light text-base"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-span-2">
+              <h3 class="avenirnextcyr_light text-xl mt-9 mb-3 uppercase">
+                Newsletter
+              </h3>
+              <div class="flex mb-4">
+                <input
+                  type="email"
+                  id="email"
+                  class="outline-none border border-r-0 border-gray-200 text-gray-900 text-sm block w-full p-1 px-3"
+                  placeholder="Your Email"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="text-white bg-secondary hover:bg-black font-medium text-sm px-5 py-1 text-center"
+                >
+                  <span class="icon-chevron-right text-3xl"></span>
+                </button>
+              </div>
+              <p class="avenirnextcyr_light text-sm">
+                Be the first to know about the product launches and special
+                annoucements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="relative copyright pt-7 pb-10 lg:pb-14 border-t">
+        <div class="container">
+          <div class="inline-grid grid-cols-1 sm:grid-cols-2 w-full">
+            <div class="flex items-center justify-center sm:justify-start">
+              <p
+                class="avenirnextcyr_light mb-2 text-center lg:text-left text-xs md:text-sm"
+              >
+                © 2023 · BK PERFUMES· All Rights Reserved
+              </p>
+            </div>
+            <div class="flex items-center justify-center md:justify-end">
+              <p
+                class="avenirnextcyr_light flex items-center justify-center text-xs sm:text-sm"
+              >
+                Made with
+                <span class="px-1"
+                  ><i class="icon-favorite text-secondary"></i
+                ></span>
+                <a href="#" class="hover:text-secondary">By Fifth Designs</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- ====== Footer Section End -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="assets/js/drawer.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
