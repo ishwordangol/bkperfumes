@@ -1,11 +1,11 @@
-$(window).scroll(function () {
-  var sticky = $("#navbar"),
-    scroll = $(window).scrollTop();
+// $(window).scroll(function () {
+//   var sticky = $("#navbar"),
+//     scroll = $(window).scrollTop();
 
-  if (scroll >= 100)
-    sticky.addClass("navbar-solid");
-  else sticky.removeClass("navbar-solid");
-});
+//   if (scroll >= 100)
+//     sticky.addClass("navbar-solid");
+//   else sticky.removeClass("navbar-solid");
+// });
 
 $(".slick-slider").slick({
   autoplay: false,
@@ -59,6 +59,7 @@ $(".slick-slider").slick({
     }
   ]
 });
+
 
 
 

@@ -35,13 +35,13 @@
 
   <body class="homepageWrapper">
     <header>
-      <nav class="w-full fixed py-2 z-50 navbar-bg border-b" id="navbar">
+      <nav class="w-full absolute py-2 z-50 navbar-bg border-b" id="navbar">
         <div class="container">
           <div class="flex items-center justify-between">
             <a href="./" class="block">
               <img
-                src="assets/images/logo.png"
-                class="logo h-16 md:h-auto"
+                src="assets/images/logo-black.svg"
+                class="logo h-16 md:h-28"
                 alt="BINKHADIM Logo"
               />
             </a>
@@ -74,49 +74,43 @@
       </nav>
 
       <div class="slickSliderWrapper relative">
-        <div class="slick-slider sliderDesktop hidden md:block">
+        <div class="slick-slider">
           <div class="slide-item cursor-pointer">
-            <div class="relative">
+            <div class="relative desktopSlider">
               <img
                 src="assets/images/slider1.jpg"
                 alt="Slider1"
                 class="h-auto"
               />
             </div>
+            <div class="relative mobileSlider">
+              <img
+                src="assets/images/slider-mob.jpg"
+                alt="Slider1"
+                class="w-full h-screen object-cover"
+              />
+            </div>
           </div>
 
-          <div class="slide-item">
-            <div class="relative">
+          <div class="slide-item cursor-pointer">
+            <div class="relative desktopSlider">
               <img
                 src="assets/images/slider1.jpg"
                 alt="Slider1"
                 class="h-auto"
               />
             </div>
-          </div>
-        </div>
-
-        <div class="slick-slider sliderMobile block md:hidden">
-          <div class="slide-item cursor-pointer">
-            <div class="relative">
+            <div class="relative mobileSlider">
               <img
                 src="assets/images/slider-mob.jpg"
                 alt="Slider1"
-                class="h-auto"
-              />
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="relative">
-              <img
-                src="assets/images/slider-mob.jpg"
-                alt="Slider1"
-                class="h-auto"
+                class="w-full h-screen object-cover"
               />
             </div>
           </div>
         </div>
+
+       
         <div
           class="hidden md:block SliderArrow absolute w-full top-1/2 -translate-y-1/2"
         >
@@ -143,52 +137,11 @@
             </a>
           </div>
         </div>
-        <div class="w-full SocialSiteWrapper absolute right-0 bottom-7">
-          <div class="container">
-            <div class="flex justify-end">
-              <ul class="flex items-center">
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-facebook hover:opacity-100"
-                    ><span
-                      class="icon-social-facebook text-lg text-white"
-                    ></span
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-instagram hover:opacity-100"
-                    ><span class="icon-instagram text-sm text-white"></span
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.tiktok.com/"
-                    target="_blank"
-                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-black hover:opacity-100"
-                    ><span class="icon-tiktok text-sm text-white"></span
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    target="_blank"
-                    class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full hover:bg-twitter hover:opacity-100"
-                    ><span class="icon-x1 text-sm text-white"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      </div>
       </div>
     </header>
 
-    <section class="py-8 md:py-12 lg:py-24">
+    <section class="py-12 lg:py-24">
       <div class="container">
         <div class="flex justify-center items-center">
           <img
@@ -359,7 +312,7 @@
               data-aos-duration="1000"
             >
               <img
-                src="assets/images/logo_mark.png"
+                src="assets/images/logo_mark.svg"
                 alt="Logo Mark"
                 class="h-16 inline-block mb-6"
               />
@@ -432,7 +385,7 @@
           >
             <div>
               <img
-                src="assets/images/logo-footer.png"
+                src="assets/images/logo-gold.svg"
                 alt="Logo Footer"
                 class="h-36"
               />
@@ -550,6 +503,49 @@
       </section>
     </footer>
     <!-- ====== Footer Section End -->
+
+    <div class="hidden md:block w-full SocialSiteWrapper fixed right-0 bottom-16">
+      <div class="container">
+        <div class="flex justify-end">
+          <ul class="flex items-center">
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-facebook hover:opacity-100"
+                ><span
+                  class="icon-social-facebook text-lg text-white"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-instagram hover:opacity-100"
+                ><span class="icon-instagram text-sm text-white"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full mr-3.5 hover:bg-black hover:opacity-100"
+                ><span class="icon-tiktok text-sm text-white"></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="flex items-center justify-center w-6 h-6 bg-black opacity-30 rounded-full hover:bg-twitter hover:opacity-100"
+                ><span class="icon-x1 text-sm text-white"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

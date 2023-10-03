@@ -196,6 +196,14 @@ nav.navbar-solid {
   font-weight: bold;
 }
 
+.desktopSlider {
+  display: block !important;
+}
+
+.mobileSlider {
+  display: none !important;
+}
+
 /* end of slider */
 
 .borderLine {
@@ -221,6 +229,13 @@ nav.navbar-solid {
 }
 
 @media screen and (max-width: 768px) {
+  .desktopSlider {
+    display: none !important;
+  }
+
+  .mobileSlider {
+    display: block !important;
+  }
   .btn {
     padding: 0;
   }
