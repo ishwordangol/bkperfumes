@@ -228,6 +228,20 @@ nav.navbar-solid {
   color: var(--secondary);
 }
 
+.footerlinks li > a {
+  position: relative;
+  display: block;
+  padding-left: 8px;
+}
+
+.footerlinks li > a:before {
+  position: absolute;
+  content: "-";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media screen and (max-width: 768px) {
   .desktopSlider {
     display: none !important;
