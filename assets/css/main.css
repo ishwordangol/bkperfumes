@@ -251,11 +251,12 @@ nav.navbar-solid {
     display: block !important;
   }
   .btn {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .btn:before,
-  .btn:hover:before {
-    display: none;
+
+  .btn:before {
+    left: -16px;
   }
 
   .btn:hover .btn-text,
