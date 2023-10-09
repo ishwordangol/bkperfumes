@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINKHADIM</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" href="assets/css/drawer.css" /> -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="w-full py-4 z-50 navbar-bg" id="navbar">
+            <div class="container">
+                <div class="flex items-center justify-between">
+                    <a href="./" class="block">
+                        <img src="assets/images/logo_icon.svg" class="logo h-12 md:h-16" alt="BINKHADIM Logo" />
+                    </a>
+
+                    <ul class="flex-1 flex items-center justify-end space-x-4">
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-search text-xl"></span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-user text-xl"></span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-shopping-bag text-xl"></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-menu text-xl"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <section class="breadcrumbWrapper py-3 border-t border-b">
+        <div class="container">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="index.html" class="inline-flex items-center text-sm font-medium hover:text-secondary">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <svg aria-hidden="true" class="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <a href="listingpage.html" class="ml-1 text-sm font-medium hover:text-secondary">Ghalya</a>
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+    </section>
+
+    <section class="py-12 md:pt-16 lg:pt-22 productDetailWrapper">
+        <div class="container">
+                    <div class="flex flex-wrap justify-between relative">
+                        <div class="w-full lg:w-1/4 pb-16 lg:py-24">
+                            <h1 class="uppercase text-3xl xs:text-4xl lg:text-5xl font-medium mb-8">
+                                Ghalya
+                            </h1>
+                            <p class="font-light text-base">A masterful blend of rare and
+                                precious ingredients that incapsulates the essence of
+                                refined
+                                perfumery. A majestic woody, powdery sense along with a heart of exotic florals diffused
+                                into an impecable base of smooth aged oud and acts as the signature flourish of the
+                                sublime
+                                piece. </p>
+                        </div>
+                        <div class="w-auto sm:w-2/4 flex lg:justify-center pr-8 sm:pr-16 lg:px-16">
+                            <img src="assets/images/products/ghalya-perfume-img.png"
+                                alt="Ghalya Product" class="h-72 xs:h-96 md:h-[614px]" />
+                        </div>
+                        <div class="flex-1 sm:flex-none w-auto sm:w-2/4 lg:w-1/4 py-0 xs:py-16 sm:py-24">
+                            <h1 class="uppercase text-2xl xs:text-3xl lg:text-4xl  font-medium mb-8">
+                                AED 595.00
+                            </h1>
+                            <div class="flex flex-wrap items-center justify-between mb-11">
+                                <div class="w-full mb-6 sm:w-auto sm:mb-0">
+                                    <span class="block mb-6">Size</span>
+                                    <button class="flex items-center border border-gray-300 py-2 px-4 hover:text-secondary hover:border-secondary"><span class="icon-singledrop mr-2 text-xl"></span><span>75ml</span></button>
+                                </div>
+                                <div class="w-full sm:w-auto">
+                                    <span class="block mb-6">Quantity</span>
+                                    <div class="flex items-center qtywrap mr-2">
+                                        <button type="button" id="qtysub"
+                                            class="qtysub border border-gray-300 w-8 h-8 flex items-center justify-center rounded-full  hover:text-secondary hover:border-secondary"><i
+                                                class="icon-minus"></i></button>
+                                        <input
+                                            class="qtycount h-8 w-12 text-center rounded-none focus:outline-none"
+                                            type="text" id="1" value="1" min="1" max="100" />
+                                        <button type="button" id="qtyadd"
+                                            class="qtyadd border border-gray-300 w-8 h-8 flex items-center justify-center rounded-full  hover:text-secondary hover:border-secondary"><i
+                                                class="icon-plus"></i></button>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="hidden md:block">
+                                <button class="uppercase py-2 px-8 w-full border border-gray-300 mb-4 hover:bg-black hover:border-black hover:text-white">Add to Cart</button>
+                                <button class="uppercase py-2 px-8 w-full border border-secondary bg-secondary text-white hover:bg-black hover:border-black">Buy it Now</button>
+                            </div>
+                        </div>                
+            </div>
+        </div>
+    </section>
+
+    <section class="productInfoWrapper md:-mt-32 pt-16 md:pt-46 pb-16 bg-bg_gray">
+        <div class="container">
+            <div class="grid grid-cols-1 xs:grid-cols-4 items-center gap-4 lg:gap-0">
+                <div class="w-full flex items-center justify-center gap-4 mb-4 xs:block xs:w-auo xs:gap-0 xs:mb-0">
+                    <div class="flex flex-col justify-center text-center xs:mb-14">
+                        <span class="icon-map block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
+                        <span class="block font-medium">Made in UAE</span>
+                    </div>
+                    <div class="flex flex-col justify-center text-center">
+                        <span class="icon-badge block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
+                        <span class="block font-medium">IFRA Certified</span>
+                    </div>
+                </div>
+                <div class="col-span-2 text-center px-4 lg:px-20 xl:px-40">
+                    <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+                        <h2 class="adobeArabicRegular text-3xl uppercase">Top</h2>
+                        <p class="font-medium text-sm opacity-80">
+                            Neroli, Bergamot, Mandarin, Cardamom, Orange Blossom.
+                        </p>
+                    </div>
+
+                    <div class="mt-10" data-aos="fade-down" data-aos-delay="110" data-aos-duration="1200">
+                        <h2 class="adobeArabicRegular text-3xl uppercase">Heart</h2>
+                        <p class="font-medium text-sm opacity-80">
+                            Bulgarian Rose, Marshmallow, Ylang-ylang, Heliotrope, Jasmine.
+                        </p>
+                    </div>
+
+                    <div class="mt-10" data-aos="fade-down" data-aos-delay="120" data-aos-duration="1400">
+                        <h2 class="adobeArabicRegular text-3xl uppercase">Base</h2>
+                        <p class="font-medium text-sm opacity-80">
+                            Oud Oil, Ambergris, Frankincense, Orris Root, Musk.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full flex items-center justify-center gap-4 mt-4 xs:block xs:w-auo xs:gap-0 xs:mt-0">
+                    <div class="flex flex-col justify-center text-center xs:mb-14">
+                        <span class="icon-drop block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
+                        <span class="block font-medium">Finest Ingredients</span>
+                    </div>
+                    <div class="flex flex-col justify-center text-center">
+                        <span class="icon-leaf block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
+                        <span class="block font-medium">Environment Friendly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-22">
+        <div class="container">
+            <div class="expansionWrapper">
+                <div class="expansionlist">
+                    <a href="#" class="flex items-center justify-between active uppercase text-2xl md:text-3xl">
+                        <span class="font-medium hover:text-secondary">Shipping and refunds</span>
+                        <span class="iconbox icon-chevron-down hover:text-secondary"></span>
+                    </a>
+                    <div class="mt-7 md:mt-14 expansioncontent font-medium w-full md:w-[88%]">
+                        <div class="mb-4 md:mb-8">
+                            <h4 class="text-lg mb-4">Shipping Policy</h4>
+                            <p class="font-medium">Shipping costs for your order are non-refundable and are based on the
+                                weight of the items you order and your location. Our standard delivery time is 1-3
+                                business
+                                days from the date of order confirmation, Outside the UAE for international deliveries,
+                                please allow 5-7 business days for your order to arrive. Please note that these
+                                timeframes
+                                are estimates and can vary based on factors such as customs clearance, weekends, public
+                                holidays and other unforeseen circumstances.
+                        </div>
+                        <div>
+                            <h4 class="text-lg mb-4">Refund Policy</h4>
+                            <p class="font-medium">You can return your item or exchange your purchase for up to 7 days
+                                from the purchase date. Returned or exchanged products must be in the condition you
+                                received them and in the original box and packaging.
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 md:mt-8 expansionlist">
+                    <a href="#" class="flex items-center justify-between active uppercase text-2xl md:text-3xl">
+                        <span class="font-medium hover:text-secondary">Description</span>
+                        <span class="iconbox icon-chevron-down hover:text-secondary"></span>
+                    </a>
+                    <div class="mt-7 md:mt-14 expansioncontent font-medium w-full md:w-[88%]">
+                        <div class="mb-4 md:mb-8">
+                            <h4 class="text-lg mb-4">Shipping Policy</h4>
+                            <p class="font-medium">Shipping costs for your order are non-refundable and are based on the
+                                weight of the items you order and your location. Our standard delivery time is 1-3
+                                business
+                                days from the date of order confirmation, Outside the UAE for international deliveries,
+                                please allow 5-7 business days for your order to arrive. Please note that these
+                                timeframes
+                                are estimates and can vary based on factors such as customs clearance, weekends, public
+                                holidays and other unforeseen circumstances.
+                        </div>
+                        <div>
+                            <h4 class="text-lg mb-4">Refund Policy</h4>
+                            <p class="font-medium">You can return your item or exchange your purchase for up to 7 days
+                                from the purchase date. Returned or exchanged products must be in the condition you
+                                received them and in the original box and packaging.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div>
+                <div class="flex justify-center text-center">
+                    <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
+                        <img src="assets/images/logo_mark.svg" alt="Logo Mark" class="h-16 inline-block mb-6" />
+                        <h1 class="adobeArabicRegular text-4xl lg:text-5xl">
+                            FOLLOW US ON INSTAGRAM
+                        </h1>
+                        <span class="block font-light text-xl lg:text-2xl mb-12">@binkhadimofficial</span>
+                    </div>
+                </div>
+                <div class="instagramPosts grid grid-cols-2 sm:grid-cols-4 gap-0 lg:gap-4">
+                    <a href="#" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom"><img src="assets/images/instagram/instapost-1.jpg"
+                            class="w-full h-80 object-cover" alt="Instagram Post" /></a>
+                    <a href="#" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom"><img src="assets/images/instagram/instapost-2.jpg"
+                            class="w-full h-80 object-cover" alt="Instagram Post" /></a>
+                    <a href="#" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom"><img src="assets/images/instagram/instapost-3.jpg"
+                            class="w-full h-80 object-cover" alt="Instagram Post" /></a>
+                    <a href="#" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom"><img src="assets/images/instagram/instapost-4.jpg"
+                            class="w-full h-80 object-cover" alt="Instagram Post" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Footer Section Start -->
+    <footer>
+        <div class="container">
+            <div class="py-8 lg:pt-12 lg:pb-20">
+                <div class="footerWrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 lg:gap-16">
+                    <div>
+                        <img src="assets/images/logo-gold.svg" alt="Logo Footer" class="h-36" />
+                    </div>
+                    <div>
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Quick links
+                        </h3>
+                        <ul class="footerlinks">
+                            <li>
+                                <a href="#" class="font-light text-base">The House</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Our Story</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Story Locator</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Legals
+                        </h3>
+                        <ul class="footerlinks">
+                            <li>
+                                <a href="#" class="font-light text-base">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Support
+                        </h3>
+                        <ul class="footerlinks">
+                            <li>
+                                <a href="#" class="font-light text-base">Shipping & Refunds</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Payment Methods</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2">
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Newsletter
+                        </h3>
+                        <div class="flex mb-4">
+                            <input type="email" id="email"
+                                class="outline-none border rounded-none border-r-0 border-gray-200 text-gray-900 text-sm block w-full p-1 px-3"
+                                placeholder="Your Email" required />
+                            <button type="submit"
+                                class="text-white bg-secondary hover:bg-black font-medium text-sm px-5 py-1 text-center">
+                                <span class="icon-chevron-right text-3xl"></span>
+                            </button>
+                        </div>
+                        <p class="font-light text-sm">
+                            Be the first to know about the product launches and special
+                            annoucements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mb-12 md:mb-0 relative copyright pt-7 pb-10 lg:pb-14 border-t">
+            <div class="container">
+                <div class="inline-grid grid-cols-1 sm:grid-cols-2 w-full">
+                    <div class="flex items-center justify-center sm:justify-start">
+                        <p class="font-light mb-2 text-center lg:text-left text-xs md:text-sm">
+                            © 2023 · BK PERFUMES· All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-end">
+                        <p class="font-light flex items-center justify-center text-xs sm:text-sm">
+                            Made with
+                            <span class="px-1"><i class="icon-favorite text-secondary"></i></span>
+                            <a href="#" class="hover:text-secondary">By Fifth Designs</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- ====== Footer Section End -->
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="assets/js/drawer.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

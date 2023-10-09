@@ -20,52 +20,39 @@
 }
 
 @font-face {
-  font-family: "avenir_next_cyr_mediumbold";
+  font-family: "avenir_next_cyr";
   src: url("../fonts/AvenirNextCyr/avenirnextcyr-bold-webfont.woff2")
       format("woff2"),
     url("../fonts/AvenirNextCyr/avenirnextcyr-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "avenir_next_cyrlight";
+  font-family: "avenir_next_cyr";
   src: url("../fonts/AvenirNextCyr/avenirnextcyr-light-webfont.woff2")
       format("woff2"),
     url("../fonts/AvenirNextCyr/avenirnextcyr-light-webfont.woff")
       format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "avenir_next_cyrmedium";
+  font-family: "avenir_next_cyr";
   src: url("../fonts/AvenirNextCyr/avenirnextcyr-medium-webfont.woff2")
       format("woff2"),
     url("../fonts/AvenirNextCyr/avenirnextcyr-medium-webfont.woff")
       format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 500;
 }
 
 .adobeArabicRegular {
   font-family: var(--adobeArabicRegular);
 }
 
-.avenirnextcyr_bold {
-  font-family: var(--avenirnextcyrBold);
-}
-
-.avenirnextcyr_light {
-  font-family: var(--avenirnextcyrLight);
-}
-
-.avenirnextcyr_medium {
-  font-family: var(--avenirnextcyrMedium);
-}
-
 body {
-  font-family: var(--avenirnextcyrLight);
+  font-family: "avenir_next_cyr";
+  font-weight: 300;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -78,6 +65,7 @@ nav.navbar-bg {
 }
 
 .homepageWrapper nav.navbar-bg {
+  position: absolute;
   background-color: transparent;
   border-bottom: none;
   transition: all 0.3s ease;
@@ -115,10 +103,6 @@ nav.navbar-bg {
   to {
     transform: translateX(0%);
   }
-}
-
-.homepageWrapper nav {
-  padding-top: 16px;
 }
 
 nav.navbar-solid {
@@ -220,6 +204,22 @@ nav.navbar-solid {
   height: 6px;
   z-index: 99;
   background: #000;
+}
+
+/* expansion */
+
+.expansionWrapper .expansionlist {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.expansioncontent {
+  display: none;
+}
+
+.expansionWrapper .expansionlist:first-child .expansioncontent {
+  display: block;
 }
 
 /* footer */
