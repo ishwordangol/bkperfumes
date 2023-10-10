@@ -42,6 +42,14 @@
   content: "\e933";
 }
 
+.icon-apple:before {
+  content: "\e937";
+  color: #999;
+}
+.icon-applepay:before {
+  content: "\e938";
+}
+
 .icon-keyboard_backspace:before {
   content: "\e900";
 }
