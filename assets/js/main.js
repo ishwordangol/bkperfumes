@@ -94,9 +94,10 @@ $("select").niceSelect();
 
 $(".drawer").drawer();
 
-$("#promobtn").click(function () {
-  $('#promobtn').addClass('promoshow');
-  $(".promobox").css("display", "flex");
+$('.promocode-button').click(function () {
+  // Toggle the visibility of the content div
+  $('.promocode-content').toggleClass('hidden');
+  // Toggle the icon
+  $('.promocode-container').toggleClass('expanded');
 });
-
 

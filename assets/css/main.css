@@ -100,6 +100,21 @@ input[type="checkbox"]:before {
   z-index: 2;
 }
 
+/* expanded */
+
+.toggle-icon::before {
+  font-family: "icomoon";
+  content: "\e936";
+  font-size: 18px;
+  font-weight: 600;
+}
+.expanded .toggle-icon::before {
+  font-family: "icomoon";
+  content: "\e935";
+  font-size: 18px;
+  font-weight: 600;
+}
+
 nav.navbar-bg {
   background-color: #ffffff;
 }

@@ -241,20 +241,22 @@
                             <span class="block text-base">AED 656.25</span>
                         </div>
                     </div>
-                    <div class="promocode lg:mt-11 py-8 px-4 bg-gray-200">
-                        <button id="promobtn" class="w-full flex items-center justify-between">
-                            <h3>Have a Promo Code?</h3>
-                            <span class="icon-plus text-xl hover:text-secondary"></span>
-                        </button>
-                        <div class="mt-2 promobox flex items-center gap-2 hidden">
-                            <input
-                                class="text-xs uppercase appearance-none border w-[220px] rounded-none py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
-                                id="promoinput" type="text" placeholder="Enter Code" />
-                            <button
-                                class="flex-1 text-xs uppercase py-3 px-3 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary">
-                                Redeem
+                    <div class="lg:mt-11 py-8 px-4 bg-gray-200">
+                        <div class="promocode-container">
+                            <button class="promocode-button w-full flex items-center justify-between">  
+                                <h3>Have a Promo Code?</h3>
+                                <span class="toggle-icon hover:text-secondary"></span>
                             </button>
-
+                            <div class="promocode-content mt-2 promobox flex items-center gap-2 hidden">
+                                <input
+                                    class="text-xs uppercase appearance-none border w-[220px] rounded-none py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
+                                    id="promoinput" type="text" placeholder="Enter Code" />
+                                <button
+                                    class="flex-1 text-xs uppercase py-3 px-3 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary">
+                                    Redeem
+                                </button>
+    
+                            </div>
                         </div>
                     </div>
                     <p class="mt-4 text-xs">International shoppers are required to pay customs charges as well as any
