@@ -55,8 +55,8 @@
 
     <div class="checkoutWrapper">
         <div class="container">
-            <div class="grid grid-cols-5 gap-16 pb-28">
-                <div class="col-span-3">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 pb-28">
+                <div class="col-span-1 lg:col-span-3">
                     <div class="pt-12">
                         <h3 class="text-xl uppercase font-medium">Checkout</h3>
                         <p>Sign in for faster checkout experience</p>
@@ -71,19 +71,19 @@
                     <div class="mt-10">
                         <h3 class="text-xl uppercase font-medium">Contact Information</h3>
                         <div class="mt-4 grid grid-cols-2 gap-4">
-                            <div class="form-group">
+                            <div class="form-group col-span-2 sm:col-span-1">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="email" type="email" placeholder="Email" />
                             </div>
-                            <div class="form-group relative">
+                            <div class="form-group relative col-span-2 sm:col-span-1">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 pl-16 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 pl-16 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="mobile" type="number" placeholder="56 692 2440" />
                                     <img src="assets/images/UAE-flag.png" alt="flag" class="absolute top-0 left-0 p-1 h-full border-r"/>
                             </div>
                         </div>
-                        <div class="checkbox mt-2">
+                        <div class="checkbox mt-4">
                             <input id="news-offer" name="news-offer" type="checkbox" value="yes">
                             <label for="news-offer" class="text-xs">Email me with news & offers</label>
                         </div>
@@ -91,29 +91,29 @@
                     <div class="mt-10">
                         <h3 class="text-xl uppercase font-medium">Shipping address</h3>
                         <div class="mt-4 grid grid-cols-2 gap-4">
-                            <div class="form-group">
+                            <div class="form-group col-span-2 sm:col-span-1">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="firstname" type="text" placeholder="First Name" />
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-span-2 sm:col-span-1">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="lastname" type="text" placeholder="Last Name" />
                             </div>
                             <div class="col-span-2 form-group">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="address" type="text" placeholder="Address" />
                             </div>
 
                             <div class="col-span-2 form-group">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="optionalAddress" type="text" placeholder="Apartment, villa, etc (Optional)" />
                             </div>
 
-                            <div class="form-group grid grid-cols-2 gap-4">
+                            <div class="col-span-2 sm:col-span-1 form-group grid grid-cols-2 gap-4">
                                 <div>
                                     <select>
                                         <option data-display="City/ Emirates">City/ Emirates</option>
@@ -125,11 +125,11 @@
                                 </div>
                                 <div class="form-group">
                                     <input
-                                        class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                         id="postalcode" type="text" placeholder="Postal Code" />
                                 </div>
                             </div>
-                            <div class="form-group relative nice-select-transparent">
+                            <div class="col-span-2 sm:col-span-1 form-group relative nice-select-transparent">
                                 <label class="absolute top-0 left-0 px-3 py-1 w-full text-xs">Location</label>
                                 <select>
                                     <option data-display="United Arab Emirates">United Arab Emirates</option>
@@ -158,31 +158,31 @@
                         <div class="mt-4 grid grid-cols-2 gap-4">
                             <div class="col-span-2 form-group relative">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="cardnumber" type="number" placeholder="1234 1234 1234 1234" />
                                     <img src="assets/images/payment-partner.png" alt="Payment partner" class="p-1 absolute top-0 right-0 h-full"/>
                             </div>
                             <div class="form-group">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="date" type="text" placeholder="MM/YY" />
                             </div>
                             <div class="form-group relative">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="cvc" type="text" placeholder="CVC" />
                                     <img src="assets/images/card.png" alt="Payment partner" class="p-1 absolute top-0 right-0 h-full"/>
                             </div>
                             <div class="col-span-2 form-group">
                                 <input
-                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="cartname" type="text" placeholder="Name on Cart" />
                             </div>
 
 
                             <div class="col-span-2 mt-4">
                                 <button
-                                    class="uppercase py-2 px-4 xs:px-8 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Pay
+                                    class="uppercase py-3.5 xs:px-8 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Pay
                                     AEd 656.25
                                 </button>
                             </div>
@@ -190,7 +190,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-2 bg-bg_gray p-12">
+                <div class="col-span-1 lg:col-span-2 bg-bg_gray p-12">
                     <div>
                         <h3 class="text-xl uppercase font-medium">Your Order</h3>
                         <a href="#" class="text-sm hover:text-secondary hover:underline">Back to bag</a>
@@ -206,7 +206,7 @@
                                 <span>75ml</span>
                             </div>
                         </div>
-                        <div class="price font-medium">
+                        <div class="price font-medium text-lg">
                             AED 595.00
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                             <span class="block uppercase font-bold">VAT</span>
                             <span class="block font-bold">AED 31.50</span>
                         </div>
-                        <div class="flex justify-between items-center py-2 border-b">
+                        <div class="flex justify-between items-center py-2">
                             <span class="block uppercase font-bold">Total Price</span>
                             <span class="block font-bold">AED 656.25</span>
                         </div>
@@ -235,7 +235,7 @@
                         </button>
                         <div class="mt-2 promobox flex items-center gap-2 hidden">
                           <input
-                            class="text-xs uppercase appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            class="text-xs uppercase appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                             id="promoinput"
                             type="text"
                             placeholder="Enter Code"
@@ -248,7 +248,7 @@
                           
                         </div>
                       </div>
-                      <p class="mt-4 text-sm">International shoppers are required to pay customs charges as well as any associated import tax, VAT, or duties as required by your local jurisdiction. Contact your Client Advisor or read more about shipping.</p>
+                      <p class="mt-4 text-xs">International shoppers are required to pay customs charges as well as any associated import tax, VAT, or duties as required by your local jurisdiction. Contact your Client Advisor or read more about shipping.</p>
                 </div>
             </div>
         </div>
