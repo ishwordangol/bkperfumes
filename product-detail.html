@@ -82,13 +82,13 @@
     <section class="py-12 md:pt-16 lg:pt-22 productDetailWrapper">
         <div class="container">
                     <div class="flex flex-wrap justify-between relative">
-                        <div class="w-full lg:w-1/4 pb-16 lg:py-24"  data-aos="fade-right" 
+                        <div class="w-full lg:w-1/4 md:pb-16 lg:py-24"  data-aos="fade-right" 
                         data-aos-delay="120"
                         data-aos-duration="1400">
                             <h1 class="uppercase text-3xl xs:text-4xl lg:text-5xl mb-8">
                                 Ghalya
                             </h1>
-                            <p class="font-light text-base">A masterful blend of rare and
+                            <p class="hidden md:block font-light text-base">A masterful blend of rare and
                                 precious ingredients that incapsulates the essence of
                                 refined
                                 perfumery. A majestic woody, powdery sense along with a heart of exotic florals diffused
@@ -96,7 +96,7 @@
                                 sublime
                                 piece. </p>
                         </div>
-                        <div class="w-auto sm:w-2/4 flex lg:justify-center pr-8 sm:pr-16 lg:px-16" data-aos="fade-down" 
+                        <div class="w-2/4 flex lg:justify-center pr-8 sm:pr-16 lg:px-16" data-aos="fade-down" 
                         data-aos-delay="120"
                         data-aos-duration="1400">
                             <img src="assets/images/products/ghalya-perfume-img.png"
@@ -134,7 +134,14 @@
                                 <button class="uppercase py-2 px-8 w-full border border-gray-300 mb-4 hover:bg-black hover:border-black hover:text-white">Add to Cart</button>
                                 <button class="uppercase py-2 px-8 w-full border border-secondary bg-secondary text-white hover:bg-black hover:border-black">Buy it Now</button>
                             </div>
-                        </div>                
+                        </div>   
+                        <p class="mt-8 md:mt-0 w-full md:hidden font-light text-base">A masterful blend of rare and
+                            precious ingredients that incapsulates the essence of
+                            refined
+                            perfumery. A majestic woody, powdery sense along with a heart of exotic florals diffused
+                            into an impecable base of smooth aged oud and acts as the signature flourish of the
+                            sublime
+                            piece. </p>             
             </div>
         </div>
     </section>
@@ -142,17 +149,17 @@
     <section class="productInfoWrapper md:-mt-46 pt-16 md:pt-46 pb-16 bg-bg_gray">
         <div class="container">
             <div class="grid grid-cols-1 xs:grid-cols-4 items-center gap-4 lg:gap-0">
-                <div class="w-full flex items-center justify-center gap-4 mb-4 xs:block xs:w-auo xs:gap-0 xs:mb-0"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <div class="col-span-1 order-first w-full flex items-center justify-between xs:justify-center gap-4 xs:block xs:w-auo xs:gap-0 xs:mb-0"  data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                     <div class="flex flex-col justify-center text-center xs:mb-14">
                         <span class="icon-map block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
-                        <span class="block text-lg">Made in UAE</span>
+                        <span class="block text-base lg:text-lg">Made in UAE</span>
                     </div>
                     <div class="flex flex-col justify-center text-center">
                         <span class="icon-badge block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
-                        <span class="block text-lg">IFRA Certified</span>
+                        <span class="block text-base lg:text-lg">IFRA Certified</span>
                     </div>
                 </div>
-                <div class="col-span-2 text-center px-4 lg:px-20 xl:px-40">
+                <div class="order-last xs:order-2 col-span-1 xs:col-span-2 text-center mt-8 xs:mt-0 xs:px-4 lg:px-20 xl:px-40">
                     <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
                         <h2 class="adobeArabicRegular text-3xl uppercase">Top</h2>
                         <p class="text-sm opacity-80">
@@ -174,14 +181,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-full flex items-center justify-center gap-4 mt-4 xs:block xs:w-auo xs:gap-0 xs:mt-0"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+                <div class="order-2 xs:order-last col-span-1 w-full flex items-center justify-between xs:justify-center gap-4 xs:block xs:w-auo xs:gap-0 xs:mt-0"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
                     <div class="flex flex-col justify-center text-center xs:mb-14">
                         <span class="icon-drop block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
-                        <span class="block text-lg">Finest Ingredients</span>
+                        <span class="block text-base lg:text-lg">Finest Ingredients</span>
                     </div>
                     <div class="flex flex-col justify-center text-center">
                         <span class="icon-leaf block text-6xl lg:text-9xl mb-4 lg:mb-8"></span>
-                        <span class="block text-lg">Environment Friendly</span>
+                        <span class="block text-base lg:text-lg">Environment Friendly</span>
                     </div>
                 </div>
             </div>
@@ -274,7 +281,7 @@
     </section>
 
     <!-- ====== Footer Section Start -->
-    <footer>
+    <footer class="relative z-10 bg-white">
         <div class="container">
             <div class="py-8 lg:pt-12 lg:pb-20">
                 <div class="footerWrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 lg:gap-16">
@@ -350,7 +357,7 @@
                 </div>
             </div>
         </div>
-        <section class="mb-12 md:mb-0 relative copyright pt-7 pb-10 lg:pb-14 border-t">
+        <section class="relative copyright pt-7 pb-10 lg:pb-14 border-t">
             <div class="container">
                 <div class="inline-grid grid-cols-1 sm:grid-cols-2 w-full">
                     <div class="flex items-center justify-center sm:justify-start">
