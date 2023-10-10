@@ -92,6 +92,8 @@ $(".expansionlist > a").on("click", function (e) {
 
 $("select").niceSelect();
 
+$(".drawer").drawer();
+
 $("#promobtn").click(function () {
   $('#promobtn').addClass('promoshow');
   $(".promobox").css("display", "flex");
