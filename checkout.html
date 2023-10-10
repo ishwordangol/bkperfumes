@@ -58,16 +58,16 @@
 
     <div class="checkoutWrapper">
         <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-16 pb-16 lg:pb-28">
-                <div class="col-span-1 lg:col-span-3">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-16 pb-16 lg:pb-28">
+                <div class="col-span-1 md:col-span-3">
                     <div class="pt-12">
                         <h3 class="text-xl uppercase font-medium">Checkout</h3>
                         <p>Sign in for faster checkout experience</p>
-                        <div class="mt-4 flex justify-between items-end">
+                        <div class="mt-4 flex flex-wrap justify-between items-end">
                             <button
-                                class="uppercase py-2 px-4 xs:px-8 w-3/5 border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Sign
+                                class="uppercase py-2 px-4 xs:px-8 w-full md:w-3/5 border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Sign
                                 In</button>
-                            <a href="#" class="text-sm hover:text-secondary hover:underline">Lost Password </a>
+                            <a href="#" class="mt-4 md:mt-0 text-sm hover:text-secondary hover:underline">Lost Password? </a>
                         </div>
 
                     </div>
@@ -78,22 +78,25 @@
                                 <input
                                     class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="email" type="email" placeholder="Email" />
+                                    <div class="checkbox mt-4">
+                                        <input id="news-offer" name="news-offer" type="checkbox" value="yes">
+                                        <label for="news-offer" class="text-xs">Email me with news & offers</label>
+                                    </div>
                             </div>
-                            <div class="form-group relative col-span-2 sm:col-span-1">
+                            <div class="form-group  col-span-2 sm:col-span-1">
+                                <div class="relative">
                                 <input
                                     class="text-xs appearance-none border rounded-none w-full py-3 pl-20 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                     id="mobile" type="number" placeholder="56 692 2440" />
                                     <div class="flex items-center absolute top-0 left-0 p-1 h-full">
-                                <img src="assets/images/UAE-flag.png" alt="flag"
+                                    <img src="assets/images/UAE-flag.png" alt="flag"
                                     class="imgFlag h-full" />
                                     <span class="ml-2 w-px h-full bg-gray-500"></span>
                                 </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="checkbox mt-4">
-                            <input id="news-offer" name="news-offer" type="checkbox" value="yes">
-                            <label for="news-offer" class="text-xs">Email me with news & offers</label>
-                        </div>
+                       
                     </div>
                     <div class="mt-10">
                         <h3 class="text-xl uppercase font-medium">Shipping address</h3>
@@ -136,8 +139,7 @@
                                         id="postalcode" type="text" placeholder="Postal Code" />
                                 </div>
                             </div>
-                            <div class="col-span-2 sm:col-span-1 form-group relative nice-select-transparent">
-                                <label class="absolute top-0 left-0 px-3 py-1 w-full text-xs">Location</label>
+                            <div class="col-span-2 sm:col-span-1 form-group">
                                 <select>
                                     <option data-display="United Arab Emirates">United Arab Emirates</option>
                                     <option value="1">Country 1</option>
@@ -190,7 +192,7 @@
                             </div>
 
 
-                            <div class="col-span-2 mt-4">
+                            <div class="hidden md:block col-span-2 mt-4">
                                 <button
                                     class="uppercase py-3.5 xs:px-8 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Pay
                                     AEd 656.25
@@ -200,12 +202,12 @@
                     </div>
                 </div>
 
-                <div class="col-span-1 lg:col-span-2 bg-bg_gray p-4 lg:p-12">
-                    <div class="hidden lg:block">
+                <div class="col-span-1 md:col-span-2 bg-bg_gray p-4 lg:p-12">
+                    <div class="hidden md:block">
                         <h3 class="text-xl uppercase font-medium">Your Order</h3>
                         <a href="#" class="text-sm hover:text-secondary hover:underline">Back to bag</a>
                     </div>
-                    <div class="hidden lg:flex items-center justify-between py-8 border-b-2">
+                    <div class="hidden md:flex items-center justify-between py-8 border-b-2">
                         <div class="flex items-center gap-8">
                             <div class="relative p-2 h-20 w-20 border bg-white">
                                 <img src="assets/images/ghalya-transparent.png" alt="Product Name" class="h-full" />
@@ -221,22 +223,22 @@
                             AED 595.00
                         </div>
                     </div>
-                    <div class="hidden lg:block mt-6">
+                    <div class="hidden md:block mt-6">
                         <div class="flex justify-between items-center py-2 border-b">
-                            <span class="block uppercase font-bold">Sub Total</span>
-                            <span class="block font-bold">AED 595.00</span>
+                            <span class="block uppercase text-base">Sub Total</span>
+                            <span class="block text-base">AED 595.00</span>
                         </div>
                         <div class="flex justify-between items-center py-2 border-b">
-                            <span class="block uppercase font-bold">Shipping</span>
-                            <span class="block font-bold">AED 30.00</span>
+                            <span class="block uppercase text-base">Shipping</span>
+                            <span class="block text-base">AED 30.00</span>
                         </div>
                         <div class="flex justify-between items-center py-2 border-b">
-                            <span class="block uppercase font-bold">VAT</span>
-                            <span class="block font-bold">AED 31.50</span>
+                            <span class="block uppercase text-base">VAT</span>
+                            <span class="block text-base">AED 31.50</span>
                         </div>
                         <div class="flex justify-between items-center py-2">
-                            <span class="block uppercase font-bold">Total Price</span>
-                            <span class="block font-bold">AED 656.25</span>
+                            <span class="block uppercase text-base">Total Price</span>
+                            <span class="block text-base">AED 656.25</span>
                         </div>
                     </div>
                     <div class="promocode lg:mt-11 py-8 px-4 bg-gray-200">
@@ -246,10 +248,10 @@
                         </button>
                         <div class="mt-2 promobox flex items-center gap-2 hidden">
                             <input
-                                class="text-xs uppercase appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
+                                class="text-xs uppercase appearance-none border w-[220px] rounded-none py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-secondary"
                                 id="promoinput" type="text" placeholder="Enter Code" />
                             <button
-                                class="text-xs uppercase py-3 px-4 xs:px-8 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary">
+                                class="flex-1 text-xs uppercase py-3 px-3 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary">
                                 Redeem
                             </button>
 
@@ -264,7 +266,7 @@
     </div>
 
     <!-- ====== Footer Section Start -->
-    <footer>
+    <footer class="relative z-10 bg-white">
         <div class="container">
             <div class="py-8 lg:pt-12 lg:pb-20">
                 <div class="footerWrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 lg:gap-16">
@@ -340,7 +342,7 @@
                 </div>
             </div>
         </div>
-        <section class="mb-12 md:mb-0 relative copyright pt-7 pb-10 lg:pb-14 border-t">
+        <section class="relative copyright pt-7 pb-10 lg:pb-14 border-t">
             <div class="container">
                 <div class="inline-grid grid-cols-1 sm:grid-cols-2 w-full">
                     <div class="flex items-center justify-center sm:justify-start">
@@ -362,7 +364,7 @@
     </div>
     <!-- ====== Footer Section End -->
 
-    <div class="block lg:hidden bg-white border-t fixed bottom-0 left-0 right-0 py-2 px-4">
+    <div class="block md:hidden bg-white border-t fixed bottom-0 left-0 right-0 py-2 px-4">
         <div class="flex justify-between items-center space-x-2 pb-2 border-b">
             <button type="button"
                 class="block lg:hidden drawer-toggle uppercase py-3.5 xs:px-8 w-full border border-secondary bg-secondary text-white text-sm xs:text-base">
@@ -376,7 +378,7 @@
         </div>
     </div>
 
-    <div class="drawer drawer--right block lg:hidden">
+    <div class="drawer drawer--right block md:hidden">
         <div class="drawer-nav">
             <div>
                 <h3 class="text-xl uppercase font-medium">Your Order</h3>
@@ -400,20 +402,20 @@
             </div>
             <div class="mt-6">
                 <div class="flex justify-between items-center py-2 border-b">
-                    <span class="block uppercase font-bold">Sub Total</span>
-                    <span class="block font-bold">AED 595.00</span>
+                    <span class="block uppercase text-base">Sub Total</span>
+                    <span class="block text-base">AED 595.00</span>
                 </div>
                 <div class="flex justify-between items-center py-2 border-b">
-                    <span class="block uppercase font-bold">Shipping</span>
-                    <span class="block font-bold">AED 30.00</span>
+                    <span class="block uppercase text-base">Shipping</span>
+                    <span class="block text-base">AED 30.00</span>
                 </div>
                 <div class="flex justify-between items-center py-2 border-b">
-                    <span class="block uppercase font-bold">VAT</span>
-                    <span class="block font-bold">AED 31.50</span>
+                    <span class="block uppercase text-base">VAT</span>
+                    <span class="block text-base">AED 31.50</span>
                 </div>
                 <div class="flex justify-between items-center py-2">
-                    <span class="block uppercase font-bold">Total Price</span>
-                    <span class="block font-bold">AED 656.25</span>
+                    <span class="block uppercase text-base">Total Price</span>
+                    <span class="block text-base">AED 656.25</span>
                 </div>
             </div>
         </div>

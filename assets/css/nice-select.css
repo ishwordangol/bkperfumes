@@ -106,9 +106,6 @@
   min-height: 34px;
 }
 
-.nice-select-transparent .nice-select {
-  background: transparent;
-}
 .nice-select .list,
 .dropdownlist {
   width: 100%;
