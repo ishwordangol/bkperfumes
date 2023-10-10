@@ -2,18 +2,18 @@
 .listingdropdownbtn,
 .packagetypelist {
   -webkit-tap-highlight-color: transparent;
+  font-size: 12px;
   background-color: #fff;
-  border-radius: 12px;
-  border: solid 1px #e5e7eb;
+  border: solid 1px rgb(229, 231, 235);
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
   display: block;
   float: left;
-  height: 42px;
-  line-height: 40px;
   outline: none;
-  padding-left: 18px;
+  height: 41px;
+  line-height: 41px;
+  padding-left: 12px;
   padding-right: 30px;
   position: relative;
   text-align: left !important;
@@ -24,7 +24,7 @@
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  width: auto;
+  width: 100%;
 }
 
 .nice-select:hover {
@@ -105,10 +105,14 @@
   line-height: 34px;
   min-height: 34px;
 }
+
+.nice-select-transparent .nice-select {
+  background: transparent;
+}
 .nice-select .list,
 .dropdownlist {
+  width: 100%;
   background-color: #fff;
-  border-radius: 8px;
   box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
   box-sizing: border-box;
   margin-top: 4px;

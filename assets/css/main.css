@@ -222,6 +222,12 @@ nav.navbar-solid {
   display: block;
 }
 
+/* promocode */
+
+.promoshow > span {
+  display: none;
+}
+
 /* footer */
 
 .footerWrapper > div ul li:hover a {
@@ -264,6 +270,12 @@ nav.navbar-solid {
   .btn:focus .btn-text,
   .btn:focus .btn-icon {
     color: var(--secondary);
+  }
+
+  .btn:hover:before,
+  .btn:focus:before {
+    width: 56px;
+    opacity: 0.1;
   }
 }
 

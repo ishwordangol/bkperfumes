@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINKHADIM</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.1/feather.min.js" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" href="assets/css/drawer.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header class="border-b">
+        <nav class="w-full py-4 z-50 navbar-bg" id="navbar">
+            <div class="container">
+                <div class="flex items-center justify-between">
+                    <a href="./" class="block">
+                        <img src="assets/images/logo_icon.svg" class="logo h-12 md:h-16" alt="BINKHADIM Logo" />
+                    </a>
+
+                    <ul class="flex-1 flex items-center justify-end space-x-4">
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-search text-xl"></span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-user text-xl"></span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-shopping-bag text-xl"></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:text-secondary"><span class="icon-menu text-xl"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <div class="checkoutWrapper">
+        <div class="container">
+            <div class="grid grid-cols-5 gap-16 pb-28">
+                <div class="col-span-3">
+                    <div class="pt-12">
+                        <h3 class="text-xl uppercase font-medium">Checkout</h3>
+                        <p>Sign in for faster checkout experience</p>
+                        <div class="mt-4 flex justify-between items-end">
+                            <button
+                                class="uppercase py-2 px-4 xs:px-8 w-3/5 border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Sign
+                                In</button>
+                            <a href="#" class="text-sm hover:text-secondary hover:underline">Lost Password </a>
+                        </div>
+
+                    </div>
+                    <div class="mt-10">
+                        <h3 class="text-xl uppercase font-medium">Contact Information</h3>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="email" type="email" placeholder="Email" />
+                            </div>
+                            <div class="form-group relative">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 pl-16 pr-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="mobile" type="number" placeholder="56 692 2440" />
+                                    <img src="assets/images/UAE-flag.png" alt="flag" class="absolute top-0 left-0 p-1 h-full border-r"/>
+                            </div>
+                        </div>
+                        <div class="block mt-2">
+                            <input
+                                class="relative float-left  mr-[6px] mt-[0.15rem] h-[1.125rem] w-[1.125rem] appearance-none border-[0.125rem] border-solid border-neutral-300 outline-none checked:border-primary checked:bg-primary checked:after:absolute checked:after:-mt-px checked:after:ml-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer focus:shadow-none focus:transition-[border-color_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:after:-mt-px checked:focus:after:ml-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent"
+                                type="checkbox" value="" id="checkboxDefault" />
+                            <label class="text-xs inline-block pl-2 hover:cursor-pointer" for="checkboxDefault">
+                                Email me with news & offers
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h3 class="text-xl uppercase font-medium">Shipping address</h3>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="firstname" type="text" placeholder="First Name" />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="lastname" type="text" placeholder="Last Name" />
+                            </div>
+                            <div class="col-span-2 form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="address" type="text" placeholder="Address" />
+                            </div>
+
+                            <div class="col-span-2 form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="optionalAddress" type="text" placeholder="Apartment, villa, etc (Optional)" />
+                            </div>
+
+                            <div class="form-group grid grid-cols-2 gap-4">
+                                <div>
+                                    <select>
+                                        <option data-display="City/ Emirates">City/ Emirates</option>
+                                        <option value="1">City 1</option>
+                                        <option value="2">City 2</option>
+                                        <option value="3">City 3</option>
+                                        <option value="4">City 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input
+                                        class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="postalcode" type="text" placeholder="Postal Code" />
+                                </div>
+                            </div>
+                            <div class="form-group relative nice-select-transparent">
+                                <label class="absolute top-0 left-0 px-3 py-1 w-full text-xs">Location</label>
+                                <select>
+                                    <option data-display="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="1">Country 1</option>
+                                    <option value="2">Country 2</option>
+                                    <option value="3">Country 3</option>
+                                    <option value="4">Country 4</option>
+                                </select>
+                            </div>
+                            <div class="col-span-2 mt-4">
+                                <button
+                                    class="uppercase py-2 px-4 xs:px-8 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Pay
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <div class="relative text-center">
+                            <h3 class="inline-flex justify-center text-2xl text-center bg-white px-2 ">Or Pay with card
+                            </h3>
+                            <div class="absolute top-1/2 -translate-1/2 w-full h-0.5 bg-gray-200 z-[-1]"></div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h3 class="text-xl uppercase font-medium">Card Information</h3>
+                        <div class="mt-4 grid grid-cols-2 gap-4">
+                            <div class="col-span-2 form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="cardnumber" type="number" placeholder="1234 1234 1234 1234" />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="date" type="text" placeholder="MM/YY" />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="cvc" type="text" placeholder="CVC" />
+                            </div>
+                            <div class="col-span-2 form-group">
+                                <input
+                                    class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="cartname" type="text" placeholder="Name on Cart" />
+                            </div>
+
+
+                            <div class="col-span-2 mt-4">
+                                <button
+                                    class="uppercase py-2 px-4 xs:px-8 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base">Pay
+                                    AEd 656.25
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-2 bg-bg_gray p-12">
+                    <div>
+                        <h3 class="text-xl uppercase font-medium">Your Order</h3>
+                        <a href="#" class="text-sm hover:text-secondary hover:underline">Back to bag</a>
+                    </div>
+                    <div class="flex items-center justify-between py-8 border-b-2">
+                        <div class="flex items-center gap-8">
+                            <div class="relative p-2 h-20 w-20 border bg-white">
+                                <img src="assets/images/ghalya-transparent.png" alt="Product Name" class="h-full"/>
+                                <span class="absolute -right-2 -top-2 h-5 w-5 flex items-center justify-center rounded-full bg-secondary text-xs text-white">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium uppercase">Ghalya</h3>
+                                <span>75ml</span>
+                            </div>
+                        </div>
+                        <div class="price font-medium">
+                            AED 595.00
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <div class="flex justify-between items-center py-2 border-b">
+                            <span class="block uppercase font-bold">Sub Total</span>
+                            <span class="block font-bold">AED 595.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b">
+                            <span class="block uppercase font-bold">Shipping</span>
+                            <span class="block font-bold">AED 30.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b">
+                            <span class="block uppercase font-bold">VAT</span>
+                            <span class="block font-bold">AED 31.50</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b">
+                            <span class="block uppercase font-bold">Total Price</span>
+                            <span class="block font-bold">AED 656.25</span>
+                        </div>
+                    </div>
+                    <div class="promocode mt-8 lg:mt-11 py-8 px-4 bg-gray-200">
+                        <button id="promobtn" class="w-full flex items-center justify-between">
+                          <h3>Have a Promo Code?</h3>
+                          <span class="icon-plus text-xl hover:text-secondary"></span>
+                        </button>
+                        <div class="mt-2 promobox flex items-center gap-2 hidden">
+                          <input
+                            class="text-xs appearance-none border rounded-none w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="promoinput"
+                            type="text"
+                            placeholder="Enter Code"
+                          />
+                          <button
+                            class="uppercase py-2 px-4 xs:px-8 w-full border border-black bg-black text-white hover:bg-secondary hover:border-secondary text-sm xs:text-base"
+                          >
+                            Redeem
+                          </button>
+                          
+                        </div>
+                      </div>
+                      <p class="mt-4 text-sm">International shoppers are required to pay customs charges as well as any associated import tax, VAT, or duties as required by your local jurisdiction. Contact your Client Advisor or read more about shipping.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== Footer Section Start -->
+    <footer>
+        <div class="container">
+            <div class="py-8 lg:pt-12 lg:pb-20">
+                <div class="footerWrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-8 lg:gap-16">
+                    <div>
+                        <img src="assets/images/logo-gold.svg" alt="Logo Footer" class="h-36" />
+                    </div>
+                    <div>
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Quick links
+                        </h3>
+                        <ul class="footerlinks">
+                            <li>
+                                <a href="#" class="font-light text-base">The House</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Our Story</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Story Locator</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Legals
+                        </h3>
+                        <ul class="footerlinks">
+                            <li>
+                                <a href="#" class="font-light text-base">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Support
+                        </h3>
+                        <ul class="footerlinks">
+                            <li>
+                                <a href="#" class="font-light text-base">Shipping & Refunds</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Payment Methods</a>
+                            </li>
+                            <li>
+                                <a href="#" class="font-light text-base">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2">
+                        <h3 class="font-light text-xl mt-9 mb-3 uppercase">
+                            Newsletter
+                        </h3>
+                        <div class="flex mb-4">
+                            <input type="email" id="email"
+                                class="outline-none border rounded-none border-r-0 border-gray-200 text-gray-900 text-sm block w-full p-1 px-3"
+                                placeholder="Your Email" required />
+                            <button type="submit"
+                                class="text-white bg-secondary hover:bg-black font-medium text-sm px-5 py-1 text-center">
+                                <span class="icon-chevron-right text-3xl"></span>
+                            </button>
+                        </div>
+                        <p class="font-light text-sm">
+                            Be the first to know about the product launches and special
+                            annoucements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="mb-12 md:mb-0 relative copyright pt-7 pb-10 lg:pb-14 border-t">
+            <div class="container">
+                <div class="inline-grid grid-cols-1 sm:grid-cols-2 w-full">
+                    <div class="flex items-center justify-center sm:justify-start">
+                        <p class="font-light mb-2 text-center lg:text-left text-xs md:text-sm">
+                            © 2023 · BK PERFUMES· All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-end">
+                        <p class="font-light flex items-center justify-center text-xs sm:text-sm">
+                            Made with
+                            <span class="px-1"><i class="icon-favorite text-secondary"></i></span>
+                            <a href="#" class="hover:text-secondary">By Fifth Designs</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- ====== Footer Section End -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="assets/js/drawer.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

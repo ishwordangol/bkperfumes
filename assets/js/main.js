@@ -90,6 +90,11 @@ $(".expansionlist > a").on("click", function (e) {
 });
 
 
+$("select").niceSelect();
 
+$("#promobtn").click(function () {
+  $('#promobtn').addClass('promoshow');
+  $(".promobox").css("display", "flex");
+});
 
 
