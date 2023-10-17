@@ -21,7 +21,6 @@
     <script src="assets/js/tailwind.config.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/megamenu.css" />
     <link rel="stylesheet" href="assets/css/drawer.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
@@ -46,7 +45,7 @@
                             <a href="#" class="hover:text-secondary"><span class="icon-shopping-bag text-xl"></span></a>
                         </li>
 
-                        <li>
+                        <li class="drawer-toggle" data-target="drawerRight">
                             <a href="#" class="hover:text-secondary"><span class="icon-menu text-xl"></span></a>
                         </li>
                     </ul>
@@ -369,7 +368,7 @@
     <div class="block md:hidden bg-white border-t fixed bottom-0 left-0 right-0 py-2 px-4">
         <div class="flex justify-between items-center space-x-2 pb-2 border-b">
             <button type="button"
-                class="block lg:hidden drawer-toggle uppercase py-3.5 xs:px-8 w-full border border-secondary bg-secondary text-white text-sm xs:text-base">
+                class="block lg:hidden drawer-toggle uppercase py-3.5 xs:px-8 w-full border border-secondary bg-secondary text-white text-sm xs:text-base" data-target="drawerCheckoutRight">
                 View Summary
             </button>
             <button
@@ -380,7 +379,7 @@
         </div>
     </div>
 
-    <div class="drawer drawer--right block md:hidden">
+    <div class="drawer drawer--right block md:hidden" id="drawerCheckoutRight">
         <div class="drawer-nav">
             <div>
                 <h3 class="text-xl uppercase font-medium">Your Order</h3>
@@ -421,7 +420,84 @@
                 </div>
             </div>
         </div>
+        <div class="drawer-overlay drawer-toggle"></div>
     </div>
+
+    <div class="drawer drawer--right drawer-largescreen" id="drawerRight">
+        <div class="drawer-nav p-8">
+          <div class="relative h-full">
+          <div class="flex justify-between items-center mb-16">
+            <a href="./" class="block">
+              <img src="assets/images/logo_icon.svg" class="logo h-12 md:h-16" alt="BINKHADIM Logo" />
+          </a>
+            <span
+              class="icon-x drawer-toggle text-4xl cursor-pointer hover:text-primary"
+            ></span>
+          </div>
+          <div class="nav-menus-wrapper">
+            <ul class="nav-menu">
+              <li>
+                <a
+                  href="#"
+                  aria-label="Nav Link"
+                  class="block py-4 text-center sm:text-left text-2xl lg:text-3xl border-b border-gray-100 sm:hover:text-secondary italic"
+                  >Ghalya</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Nav Link"
+                  class="block py-4 text-center sm:text-left text-2xl lg:text-3xl border-b border-gray-100 sm:hover:text-secondary italic"
+                  >About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Nav Link"
+                  class="block py-4 text-center sm:text-left text-2xl lg:text-3xl border-b border-gray-100 sm:hover:text-secondary italic"
+                  >Brand Story</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Nav Link"
+                  class="block py-4 text-center sm:text-left text-2xl lg:text-3xl border-b border-gray-100 sm:hover:text-secondary italic"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+    
+          <button type="button" aria-label="Sign In" class="mt-8 uppercase py-2 px-8 w-full border border-secondary bg-secondary text-white sm:hover:bg-black sm:hover:border-black">Sign In</button>
+          <ul class="absolute w-full bottom-5 sm:bottom-10 mt-8 flex items-center justify-center space-x-3.5">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                class="flex items-center justify-center w-8 h-8 md:w-6 md:h-6 bg-black opacity-30 rounded-full hover:bg-facebook hover:opacity-100"><span
+                  class="icon-social-facebook text-xl md:text-lg text-white"></span></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                class="flex items-center justify-center w-8 h-8 md:w-6 md:h-6 bg-black opacity-30 rounded-full hover:bg-instagram hover:opacity-100"><span
+                  class="icon-instagram text-base md:text-sm text-white"></span></a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/" target="_blank"
+                class="flex items-center justify-center w-8 h-8 md:w-6 md:h-6 bg-black opacity-30 rounded-full hover:bg-black hover:opacity-100"><span
+                  class="icon-tiktok text-base md:text-sm text-white"></span></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"
+                class="flex items-center justify-center w-8 h-8 md:w-6 md:h-6 bg-black opacity-30 rounded-full hover:bg-twitter hover:opacity-100"><span
+                  class="icon-x1 text-base md:text-sm text-white"></span></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <div class="drawer-overlay drawer-toggle"></div>
+      </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
@@ -429,7 +505,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
     <script src="assets/js/jquery.nice-select.js"></script>
     <script src="assets/js/megamenu.js"></script>
-    <script src="assets/js/drawer.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
     <script>

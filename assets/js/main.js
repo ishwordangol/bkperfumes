@@ -92,7 +92,15 @@ $(".expansionlist > a").on("click", function (e) {
 
 $("select").niceSelect();
 
-$(".drawer").drawer();
+$(".drawer-toggle").click(function () {
+  var targetDrawer = $("#" + $(this).data("target"));
+
+  // Close all open drawers except the one being opened
+  $(".drawer").not(targetDrawer).removeClass("drawer-open");
+
+  // Toggle the open class for the clicked drawer
+  targetDrawer.toggleClass("drawer-open");
+});
 
 $('.promocode-button').click(function () {
   // Toggle the visibility of the content div
